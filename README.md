@@ -43,7 +43,22 @@ touch api_yamdb/infra/.env
 - Заполнить его по примеру файла .env.sample.
 - В своем репозитории перейти на вкладку Settings:
 ![Tap on Settings](images/settings-min.png)
-
+1. Нажать Secrets and variables:
+![Tap Secrets and variables](images/tap-to-secrets-and-variables-min.png)
+2. В открывшемся списке нажать Actions:
+![Tap to Actions](images/tap-to-actions-min.png)
+3. Нажать New repository secret:
+![Tap New repository secret](images/tap-new-repository-secret-min.png)
+4. Создать переменную из файла .secrets.sample:
+![Add secret](images/add-secret-min.png)
+- Повторить шаги 3 и 4 для каждой переменной.
+- Скопировать из папки infra файл docker-compose.yml и папку nginx на ваш сервер в папку /home/<ваш-юзернейм>/:
+```
+scp -i <path-to-ssh-key> infra/docker-compose.yml <servername>@<ip>:/home/<username>/
+```
+```
+scp -r -i <path-to-ssh-key> infra/nginx/ <servername>@<ip>:/home/<username>/
+```
 - Перейти в директорию yamdb_final:
 ```
 cd yamdb_final
