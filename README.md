@@ -59,16 +59,16 @@ scp -i <path-to-ssh-key> infra/docker-compose.yml <servername>@<ip>:/home/<usern
 ```
 scp -r -i <path-to-ssh-key> infra/nginx/ <servername>@<ip>:/home/<username>/
 ```
-- Перейти в директорию yamdb_final:
+- Сделать любые изменения в файле README и запушить изменения в репозиторий.
+- Зайти на сервер и выполнить команды:
 ```
-cd yamdb_final
+sudo docker-compose exec web python manage.py migrate
 ```
-- Создать и активировать виртуальное окружение
 ```
-python3 -m venv venv
-. venv/bin/activate
+sudo docker-compose exec web python manage.py collectstatic
 ```
 
+- Открыть описание API проекта по адресу:
 ```
-pip install -r api_yamdb/requirements.txt
+http://<ip-of-your-server>/redoc/
 ```
