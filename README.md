@@ -14,7 +14,7 @@ http://otzovik.sytes.net/api/v1/
 
 ## Описание ##
 
-Цель проекта применить CICD при развертывании Django проекта
+Цель проекта применить CICD при развертывании Django проекта на сервере
 
 ## Технологии ##
 
@@ -24,11 +24,12 @@ http://otzovik.sytes.net/api/v1/
  - Git Action ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 ## Запуск проекта ##
-- Установить docker и docker-compose
-- Форкнуть репозиторий:
+- Установить на сервер docker и docker-compose
+- Создать форк репозитория:
 ```
 github.com/D-Abramoc/yamdb_final.git
 ```
+
 - Перейти в директорию yamdb_final:
 ```
 cd yamdb_final
