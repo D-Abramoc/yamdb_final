@@ -42,7 +42,7 @@ touch api_yamdb/infra/.env
 ```
 - Заполнить его по примеру файла .env.sample.
 - В своем репозитории перейти на вкладку Settings:
-![Tap on Settings](https://github.com/D-Abramoc/yamdb_final/images/settings-min.png)
+![Tap on Settings](images/settings-min.png)
 
 - Перейти в директорию yamdb_final:
 ```
